@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Kernel Panic</title>
+    
+    
+    
+    <link>https://thekernelpanic.com/</link>
+    <description>Recent content on The Kernel Panic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thekernelpanic.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Commands for Linux</title>
+      <link>https://thekernelpanic.com/post/terminal/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://thekernelpanic.com/post/terminal/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://thekernelpanic.com/img/terminal.png&#34;/&gt;
+          
+        
+        
+        
+          Commands for manage a server on linux
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://thekernelpanic.com/showcase/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thekernelpanic.com/showcase/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Header 2 # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thekernelpanic.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thekernelpanic.com/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          About # My name is Esteban Molina and I&amp;rsquo;m the author of this blog. I&amp;rsquo;m administrator and specialist in linux systems, with extensive knowledge in open source software, virtualization and scripting, specialized in the use and design of solutions based on Linux systems.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://thekernelpanic.com/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thekernelpanic.com/archive/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
