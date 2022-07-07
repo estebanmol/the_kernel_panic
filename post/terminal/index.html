@@ -222,7 +222,31 @@ date # Run the date command ro display or set the current date and time on you s
 </h2>
 <p>The mv command allows you to move a file or a directory to another location. You can also use it to rename files. Rename the archivo.txt to archivo.sh</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">mv</span> <span style="color:#f92672">archivo</span>.<span style="color:#a6e22e">txt</span> <span style="color:#f92672">archivo</span>.<span style="color:#a6e22e">sh</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="rmdir">
+  rmdir
+  <a href="#rmdir" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>The rmdir stands for remove directory. You can use it to delete empty directories. Create a documents directory and delete it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">rmdir</span> <span style="color:#f92672">documents</span>
+</span></span></code></pre></div><h2 id="rm">
+  rm
+  <a href="#rm" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>Use the rm command to delete files and non-empty directories. You should be careful when executing this command since it can break applications or render your system useless.</p>
+<p>Delete the index.html in the  directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">rm</span> <span style="color:#f92672">/</span><span style="color:#f92672">srv</span><span style="color:#f92672">/</span><span style="color:#f92672">http</span><span style="color:#f92672">/</span><span style="color:#f92672">index</span>.<span style="color:#a6e22e">html</span>
+</span></span></code></pre></div><p>To delete a directory and its contents, use the -r option. This allows you to delete the directory contents recursively. Create a documents directory and a privade sub-directory and delete them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">rm</span> <span style="color:#f92672">-r</span> <span style="color:#f92672">documents</span><span style="color:#f92672">/</span><span style="color:#f92672">privade</span>
+</span></span></code></pre></div><h2 id="cp">
+  cp
+  <a href="#cp" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>In Linux, you can copy files and directories using the cp command. Normally, you need to specify the source and destination of the files.</p>
+<p>Create a index.html file and copy it over to the /srv/http directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">touch</span> <span style="color:#f92672">index</span>.<span style="color:#a6e22e">html</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">cp</span> <span style="color:#f92672">index</span>.<span style="color:#a6e22e">html</span> <span style="color:#f92672">/</span><span style="color:#f92672">srv</span><span style="color:#f92672">/</span><span style="color:#f92672">http</span>
+</span></span></code></pre></div><p>This command is useful when tweaking settings on the base configuration files. Copy the default file to a new location with a new name to avoid losing the default settings.</p>
+
     </div>
     
       
