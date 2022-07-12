@@ -58,8 +58,8 @@ date # Run the date command ro display or set the current date and time on you s
 <meta property="og:description" content="Commands for manage a server on linux" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://thekernelpanic.com/post/commands_for_linux/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-07-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-06T00:00:00+00:00" /><meta property="og:site_name" content="The Kernel Panic" />
+<meta property="article:published_time" content="2022-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-11T00:00:00+00:00" /><meta property="og:site_name" content="The Kernel Panic" />
 
 
 
@@ -151,7 +151,7 @@ date # Run the date command ro display or set the current date and time on you s
     <div class="post-meta">
       
         <span class="post-date">
-          2022-07-06
+          2022-07-11
         </span>
 
         
@@ -253,6 +253,35 @@ date # Run the date command ro display or set the current date and time on you s
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">sudo</span> <span style="color:#f92672">chown</span> <span style="color:#f92672">-R</span> <span style="color:#f92672">$</span><span style="color:#f92672">USER</span><span style="color:#f92672">:$</span><span style="color:#f92672">USER</span> <span style="color:#f92672">/</span><span style="color:#f92672">srv</span><span style="color:#f92672">/</span><span style="color:#f92672">http</span><span style="color:#f92672">/</span><span style="color:#f92672">thekernelpanic</span>.<span style="color:#a6e22e">com</span>
 </span></span></code></pre></div><p>Also, you can assign ownership of the new directories to another user. For instance, www-data.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">sudo</span> <span style="color:#f92672">chown</span> <span style="color:#f92672">-R</span> <span style="color:#f92672">www-data</span>:<span style="color:#a6e22e">www-data</span> <span style="color:#f92672">/</span><span style="color:#f92672">srv</span><span style="color:#f92672">/</span><span style="color:#f92672">http</span><span style="color:#f92672">/</span><span style="color:#f92672">thekernelpanic</span>.<span style="color:#a6e22e">com</span>
+</span></span></code></pre></div><h2 id="chmod">
+  chmod
+  <a href="#chmod" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>The chmod command allows you to change read, write, and execute permissions for files and directories. Normally, you should use this command alongside the following permission numbers:</p>
+<ul>
+<li>0: No Permissions</li>
+<li>1: Execute permissions</li>
+<li>2: Write permissions</li>
+<li>3: Execute and write permissions</li>
+<li>4: Read permissions</li>
+<li>5: Read and execute permissions</li>
+<li>6: Write and read permissions</li>
+<li>7: Full permissions (Read, write, and execute permissions)</li>
+</ul>
+<p>The basic syntax for the chmod command is.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">chmod</span> <span style="color:#f92672">USER_PERMISSIONS</span> <span style="color:#f92672">GROUP_PERMISSIONS</span> <span style="color:#f92672">OTHERS_USERS_PERMISSIONS</span>
+</span></span></code></pre></div><p>For instance, to assign developer full permissions to the /srv/http/thekernelpanic.com directory and deny anyone from accessing it, execute.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">chmod</span> <span style="color:#f92672">700</span> <span style="color:#f92672">/</span><span style="color:#f92672">srv</span><span style="color:#f92672">/</span><span style="color:#f92672">http</span><span style="color:#f92672">/</span><span style="color:#f92672">thekernelpanic</span>.<span style="color:#a6e22e">com</span>
+</span></span></code></pre></div><p>There are several other options available for chmod; please see the man file for more information.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">man</span> <span style="color:#f92672">chmod</span>
+</span></span></code></pre></div><h2 id="cat">
+  cat
+  <a href="#cat" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>The cat (concatenate) command is useful when you want to read the content of a file and display the data in your shell window. For instance, use the cat command to display the content of your .bash_history file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">cat</span> .<span style="color:#a6e22e">bash_history</span>
+</span></span></code></pre></div><p>You can also display the content of multiple files using the cat command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#f92672">developer</span>@<span style="color:#66d9ef">linux</span> <span style="color:#f92672">~]$</span> <span style="color:#f92672">cat</span> <span style="color:#f92672">File_Name1</span> <span style="color:#f92672">File_Name2</span>
 </span></span></code></pre></div><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;COMMENTS&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
 
     </div>
